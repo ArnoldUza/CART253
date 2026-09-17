@@ -1,10 +1,10 @@
 # CART253
 This is my introductory course repository for cool projects and stuff at Concordia University
-# TITLE OF PROJECT
+# My Reintegration into Programming
 
-AUTHOR NAME
+ARNOLD IRÉNÉE UZABAKIRIHO
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
 
 Description
 
