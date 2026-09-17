@@ -4,7 +4,7 @@ This is my introductory course repository for cool projects and stuff at Concord
 
 ARNOLD IRÉNÉE UZABAKIRIHO
 
-(my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
+![View this project online](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
 
 Description
 This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
