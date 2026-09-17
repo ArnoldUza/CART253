@@ -4,11 +4,11 @@ This is my introductory course repository for cool projects and stuff at Concord
 
 ARNOLD IRÉNÉE UZABAKIRIHO
 
-[View this project online](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
+(my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
 
 Description
-
 This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+
 
 > *The Mayor of Clown Town* is a simulator experience that allows the user to control a small town populated entirely by clowns.
 
