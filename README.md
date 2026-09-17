@@ -6,8 +6,9 @@ ARNOLD IRÉNÉE UZABAKIRIHO
 
 ![View this project online](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
 
-Description
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+# Purpose of this website
+
+The purpose of the website is to introduce a preview of the type of content and subjects we'll learn throughout this course and is a glimpse into what the projects can look like or the type of things we'll be doing for this course.
 
 
 > *The Mayor of Clown Town* is a simulator experience that allows the user to control a small town populated entirely by clowns.
