@@ -4,7 +4,7 @@ AUTHOR NAME
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
-## Description
+Description
 
 This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
 
@@ -12,7 +12,7 @@ This description should help the reader understand what the program is, anything
 
 > The experience is controlled via the mouse, with left click selecting a clown and bringing up a menu of options such as "slip of banana peel" or "get into impossible capacious clown-car."
 
-> The project is meant to give the user a sense of what it would be the mayor of a town of clowns, eventually getting the sense that clowns are not taking their civic duties seriously.
+The project is meant to give the user a sense of what it would be the mayor of a town of clowns, eventually getting the sense that clowns are not taking their civic duties seriously.
 
 ## Screenshot(s)
 
