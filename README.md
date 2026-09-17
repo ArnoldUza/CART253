@@ -4,11 +4,19 @@ This is my introductory course repository for cool projects and stuff at Concord
 
 ARNOLD IRÉNÉE UZABAKIRIHO
 
-![View this project online](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
+![Banner Image](my images/floating-liquid-ribbons-vivid-colors-against-black_1252980-64786.avif)
 
 # Purpose of this website
 
-The purpose of the website is to introduce a preview of the type of content and subjects we'll learn throughout this course and is a glimpse into what the projects can look like or the type of things we'll be doing for this course.
+The purpose of the website is to introduce a preview of the type of content and subjects I'll learn throughout this course and is a glimpse into what the projects can look like or the type of things I'll be doing for this course.
+
+# My journal
+
+[This is the journal](journal.md)
+
+
+
+
 
 
 > *The Mayor of Clown Town* is a simulator experience that allows the user to control a small town populated entirely by clowns.
@@ -17,7 +25,8 @@ The purpose of the website is to introduce a preview of the type of content and 
 
 The project is meant to give the user a sense of what it would be the mayor of a town of clowns, eventually getting the sense that clowns are not taking their civic duties seriously.
 
-## Screenshot(s)
+# All of my prototypes
+
 
 This bit should have some images of the program running so that the reader has a sense of what it looks like. For example:
 
