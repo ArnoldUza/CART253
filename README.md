@@ -22,3 +22,17 @@ The purpose of the website is to introduce a preview of the type of content and 
 # My Prototypes
 
 [Landscape Exercise](https://sub5gamingaddict.github.io/cart253/instructions-challenge/)
+
+
+### Instructions Prototype 1: Face
+![screenshot](topics/Instructions/prototype-1-face/screenshot.png)
+[Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-1-face/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-1-face)
+
+### Instructions Prototype 2: Color Field
+![screenshot](topics/Instructions/prototype-2-colorfield/screenshot.png)
+[Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-2-colorfield/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-2-colorfield)
+
+### Instructions Prototype 3: Glitch Grid
+![screenshot](topics/Instructions/prototype-3-glitchgrid/screenshot.png)
+[Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-3-glitchgrid/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-3-glitchgrid)
+
