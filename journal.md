@@ -11,4 +11,4 @@ The rotated grid was the hardest to wrap my head around — combining translate(
 
 If someone looked at these three, I'd want them to notice how different the same handful of functions (ellipse, rect, random, rotate) can look depending on what you feed them. The grid prototype is the one I'd want to develop further — animating the noise offset over time instead of drawing it static seems like a natural next step.
 
-![screenshot](topics/Instructions/prototype-3-glitchgrid/screenshot.png)
+![screenshot](topics/Instructions/prototype-3-glitchgrid/Screenshot 2026-09-24 224220.png)
