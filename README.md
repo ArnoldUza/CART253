@@ -25,14 +25,14 @@ The purpose of the website is to introduce a preview of the type of content and 
 
 
 ### Instructions Prototype 1: Face
-![screenshot](topics/Instructions/prototype-1-face/screenshot.png)
+![screenshot](topics/Instructions/prototype-1-face/Screenshot 2026-09-24 224231.png)
 [Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-1-face/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-1-face)
 
 ### Instructions Prototype 2: Color Field
-![screenshot](topics/Instructions/prototype-2-colorfield/screenshot.png)
+![screenshot](topics/Instructions/prototype-2-colorfield/Screenshot 2026-09-24 224235.png)
 [Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-2-colorfield/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-2-colorfield)
 
 ### Instructions Prototype 3: Glitch Grid
-![screenshot](topics/Instructions/prototype-3-glitchgrid/screenshot.png)
+![screenshot](topics/Instructions/prototype-3-glitchgrid/Screenshot 2026-09-24 224220.png)
 [Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-3-glitchgrid/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-3-glitchgrid)
 
