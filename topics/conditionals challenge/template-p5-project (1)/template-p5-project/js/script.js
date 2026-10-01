@@ -10,12 +10,19 @@ const puck = {
   x: 200,
   y: 200,
   size: 100,
-  fill: "#ff0000"
+  fill:"#ff0000",
+  fills:{
+
+  noOverlap: "#ff0000", // red for no over
+  overlap: "#0400ff"
+  }
 };
 
 const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
+  vx: 0,
+  vy: 0,
   size: 75,
   fill: "#000000"
 };
@@ -24,7 +31,7 @@ const user = {
  * Create the canvas
  */
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
 }
 
 /**
@@ -39,6 +46,11 @@ function draw() {
   // Draw the user and puck
   drawUser();
   drawPuck();
+
+  movePuck();
+
+ 
+
 }
 
 /**
@@ -47,6 +59,9 @@ function draw() {
 function moveUser() {
   user.x = mouseX;
   user.y = mouseY;
+
+  user.vx = mouseX - pmouseX;
+  user.vy = mouseY - pmouseY;
 }
 
 /**
@@ -69,4 +84,29 @@ function drawPuck() {
   fill(puck.fill);
   ellipse(puck.x, puck.y, puck.size);
   pop();
+}
+
+function movePuck() {
+  
+
+  const d = dist(user.x, user.y, puck.x, puck.y);
+
+  const overlap = (d < (user.size/2) + (puck.size/2));
+  //const minDist = (user.size / 2 ) + (puck.size / 2)
+    // Set the puck movement based on overlap
+  if (overlap) {
+    puck.x += user.vx;
+    puck.y += user.vy;
+  }
+  
+   //makes the puck change colors when overlapped
+  if (overlap) {
+    puck.fill = puck.fills.overlap;
+    
+  }
+  else {
+    puck.fill = puck.fills.noOverlap
+  }
+
+
 }
