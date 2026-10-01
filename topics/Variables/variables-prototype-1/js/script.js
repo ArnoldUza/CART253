@@ -1,23 +1,26 @@
 /**
- * Title of Project
- * Author Name
+ * Movement & Math
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Using a variable for an object's X or Y position
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas
 */
 function setup() {
-
+ // Create a 640x480 canvas
+ createCanvas(640, 480);
 }
 
+// Variables for tracking the shape's horizontal position and movement speed
+let circleX = 100;
+let circleSpeed = 2;
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Handles background drawing, updating positions, and rendering the moving circle
 */
 function draw() {
 
