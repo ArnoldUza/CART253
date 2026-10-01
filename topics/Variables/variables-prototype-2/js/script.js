@@ -16,6 +16,7 @@ let scaleDirection = 0.2;
  */
 function setup() {
     createCanvas(640, 640);
+    noCursor();
 }
 
 /**

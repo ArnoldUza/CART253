@@ -12,14 +12,17 @@ let circleX = 100;
 let circleSpeed = 3;
 let circleJitterY = 320;
 
+
+
 /**
  * Creates the main canvas for the experiment
  */
 function setup() {
     // Create a square canvas
     createCanvas(640, 640);
-}
 
+  
+}
 /**
  * Handles background rendering, updating positions using math, and drawing the circle
  */
@@ -44,4 +47,6 @@ function draw() {
     if (circleX > width + 40) {
         circleX = -40;
     }
+
+    
 }
