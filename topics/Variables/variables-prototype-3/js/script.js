@@ -41,6 +41,24 @@ function draw() {
     starTwoX = starTwoX + starTwoSpeedX;
     starTwoY = starTwoY + starTwoSpeedY;
 
+    // Render the first shooting star element
+    push();
+    fill(255, 255, 200);
+    noStroke();
+    ellipse(starOneX, starOneY, 6, 6);
+    pop();
+
+    // Render the second shooting star element
+    push();
+    fill(200, 230, 255);
+    noStroke();
+    ellipse(starTwoX, starTwoY, 8, 8);
+    pop();
+
+    
+
+    
+
     
 }
 
