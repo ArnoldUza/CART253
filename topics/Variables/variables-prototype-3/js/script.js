@@ -55,6 +55,18 @@ function draw() {
     ellipse(starTwoX, starTwoY, 8, 8);
     pop();
 
+    // Reset the first shooting star if it travels beyond horizontal canvas boundaries
+    if (starOneX > width) {
+        starOneX = -20;
+        starOneY = random(50, 300);
+    }
+
+    // Reset the second shooting star if it travels beyond vertical canvas boundaries
+    if (starTwoY > height) {
+        starTwoX = random(50, 400);
+        starTwoY = -20;
+    }
+
     
 
     
