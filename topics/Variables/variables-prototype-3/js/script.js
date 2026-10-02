@@ -1,24 +1,21 @@
 /**
- * Title of Project
- * Author Name
+ * Atmosphere & Color - Shooting Stars
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Simulates a night sky with shooting stars moving dynamically across coordinates.
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
+// Variables tracking the first shooting star's position and velocity
+let starOneX = 0;
+let starOneY = 100;
+let starOneSpeedX = 8;
+let starOneSpeedY = 4;
 
-}
+// Variables tracking the second shooting star's position and velocity
+let starTwoX = 200;
+let starTwoY = 0;
+let starTwoSpeedX = 6;
+let starTwoSpeedY = 6;
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
-
-}
