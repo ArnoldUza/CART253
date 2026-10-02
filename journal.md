@@ -14,4 +14,18 @@ If someone looked at these three, I'd want them to notice how different the same
 ![screenshot](topics/Instructions/prototype-3-glitchgrid/Screenshot 2026-09-24 224220.png)
 
 
+
 ## Variables Prototype
+
+Working on these prototypes showed me how much a p5 sketch changes when you replace static numbers with variables that shift over time. 
+
+In Prototype 1 (Movement & Math), I liked seeing how basic addition moves a shape across the screen, while a little bit of randomness adds a cool, shaky jitter effect. It was an easy way to understand how to control motion using logic.
+
+Prototype 2 (Growth & Interactivity) focused on user control. Locking the shape to mouseX and mouseY lets the user guide the sketch, while using an if-statement to multiply the scale direction by -1 created a smooth, automated breathing effect that keeps the box pulsing within clean boundaries.
+
+For Prototype 3 (Atmosphere & Color), I wanted to focus on mood. I created shooting stars streaking across a black canvas. Figuring out how to track their independent speeds and reset them to random starting points when they left the canvas boundaries taught me how to loop automated cycles cleanly. 
+
+Overall, I wanted these three projects to show a clear progression from pure math, to user interaction, and finally to an automated scene.
+
+
+![screenshot](./topics/Variables/variables-prototype-1/jitteryBall.png)
