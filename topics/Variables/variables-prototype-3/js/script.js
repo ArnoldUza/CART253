@@ -30,6 +30,17 @@ function setup() {
  * Updates positions and draws the active celestial elements on a black background
  */
 function draw() {
+    // True black background to capture the depth of deep space
+    background(0);
+
+    // Update coordinates for the first shooting star using linear math additions
+    starOneX = starOneX + starOneSpeedX;
+    starOneY = starOneY + starOneSpeedY;
+
+    // Update coordinates for the second shooting star using linear math additions
+    starTwoX = starTwoX + starTwoSpeedX;
+    starTwoY = starTwoY + starTwoSpeedY;
+
     
 }
 
