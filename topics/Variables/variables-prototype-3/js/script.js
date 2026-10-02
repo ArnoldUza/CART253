@@ -19,3 +19,17 @@ let starTwoY = 0;
 let starTwoSpeedX = 6;
 let starTwoSpeedY = 6;
 
+/**
+ * Creates the square canvas space for the night sky
+ */
+function setup() {
+    createCanvas(640, 640);
+}
+
+/**
+ * Updates positions and draws the active celestial elements on a black background
+ */
+function draw() {
+    
+}
+
