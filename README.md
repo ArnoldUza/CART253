@@ -36,3 +36,21 @@ The purpose of the website is to introduce a preview of the type of content and 
 ![screenshot](topics/Instructions/prototype-3-glitchgrid/Screenshot 2026-09-24 224220.png)
 [Live version](https://ArnoldUza.github.io/CART253/topics/Instructions/prototype-3-glitchgrid/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Instructions/prototype-3-glitchgrid)
 
+
+## Prototyping: Variables
+
+### Variables Prototype 1: Movement & Math
+Using a yellow circle to explore linear translation math combined with automated random vertical jitter values.
+![screenshot](./topics/Variables/variables-prototype-1/jitteryBall.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Variables/variables-prototype-1/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Variables/variables-prototype-1)
+
+### Variables Prototype 2: Growth & Interactivity
+An interactive rectangular canvas matrix locked to cursor updates featuring oscillating stroke scale profiles.
+![screenshot](./topics/Variables/variables-prototype-2/pulsatingSquare.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Variables/variables-prototype-2/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Variables/variables-prototype-2)
+
+### Variables Prototype 3: Atmosphere & Color (Shooting Stars)
+A celestial deep-space simulation utilizing coordinate tracking to guide automated falling star streaks across canvas loops.
+![screenshot](./topics/Variables/variables-prototype-3/shootingStars.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Variables/variables-prototype-3/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Variables/variables-prototype-3)
+
