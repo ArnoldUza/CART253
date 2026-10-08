@@ -24,8 +24,35 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Evaluates cursor distance constraints to trigger defensive movements
 */
 function draw() {
+
+    background(15, 15, 15);
+
+    // Compute direct spatial distance tracking variables
+    let mouseDistance = dist(mouseX, mouseY, shyTarget.x, shyTarget.y);
+
+    // CONDITIONAL TRIGGER: Evaluate proximity threshold violations
+    if (mouseDistance < 120) {
+        // Change colors to express panic state
+        shyTarget.currentBoxColor = "#ff3366";
+        
+        // Escape logic along matching movement directions
+        if (mouseX > shyTarget.x) {
+            shyTarget.x -= 5;
+        } else {
+            shyTarget.x += 5;
+        }
+        
+        if (mouseY > shyTarget.y) {
+            shyTarget.y -= 5;
+        } else {
+            shyTarget.y += 5;
+        }
+    } else {
+        // Calm idle color configuration when mouse is distant
+        shyTarget.currentBoxColor = "#00ffcc";
+    }
 
 }
