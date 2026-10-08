@@ -21,7 +21,7 @@ function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Processes background noise fields and rolls high-rarity conditional event triggers
 */
 function draw() {
 
@@ -42,5 +42,18 @@ function draw() {
     if (screenFlashAlpha > 0) {
         screenFlashAlpha -= 8;
     }
+
+     // Render continuous indicators
+    push();
+    fill(255, 255, 255, 30);
+    noStroke();
+    rect(recordedEventX, recordedEventY, 30, 30);
+    pop();
+
+    // Overlay full viewport flash layers
+    push();
+    fill(255, 230, 100, screenFlashAlpha);
+    rect(0, 0, width, height);
+    pop();
 
 }
