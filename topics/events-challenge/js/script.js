@@ -79,11 +79,15 @@ function displayScore() {
 
 function keyPressed(event){
         lose();
-    }
+}
 function mouseMoved(event){
         lose();
-    }
+}
 
 function mouseWheel(event) {
+    lose();
+}
+
+function mousePressed(event) {
     lose();
 }
