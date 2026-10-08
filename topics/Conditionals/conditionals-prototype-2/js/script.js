@@ -1,18 +1,25 @@
 /**
- * Title of Project
- * Author Name
+ * Conditionals Prototype 2: The Shy Shape
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Maps conditional cursor proximity checking to simulate fear and personality.
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
+// Object managing properties for the responsive visual entity
+let shyTarget = {
+    x: 320,
+    y: 320,
+    size: 100,
+    currentBoxColor: "#00ffcc"
+};
 
+/**
+ * Initializes the default canvas space
+ */
+function setup() {
+    createCanvas(640, 640);
 }
 
 
