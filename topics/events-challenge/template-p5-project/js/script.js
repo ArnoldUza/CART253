@@ -60,3 +60,18 @@ function displayScore() {
   text(floor(score), width/2, height/2);
   pop();
 }
+
+/**
+ * The Losing Fucntion
+ */
+function lose() {
+  gameOver = true;
+}
+
+/**
+ * Triggers when any key is pressed
+ */
+function keyPressed() {
+  // Calling the lose function 
+  lose();
+}
