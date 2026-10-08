@@ -1,8 +1,8 @@
 /**
- * The Only Move Is Not To Play
- * Pippin Barr
+ * Dont do anything
+ * Arnold and Wassim
  *
- * A game where your score increases so long as you do nothing.
+ * A game that ends when you do anything.
  */
 
 "use strict";
