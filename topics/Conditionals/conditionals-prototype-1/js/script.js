@@ -59,12 +59,21 @@ function draw() {
         }
     }
 
-}
+    // Render the active structural element
+    push();
+    fill(rollingBall.fillColor);
+    noStroke();
+    ellipse(rollingBall.x, rollingBall.y, rollingBall.size);
+    pop();
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
+    // Reset loop constraints when elements exit outer bounds
+    if (rollingBall.y > height + 50 || rollingBall.y < -50) {
+        rollingBall.x = 0;
+        rollingBall.y = 320;
+        rollingBall.speedX = 4;
+        rollingBall.speedY = 0;
+        rollingBall.fillColor = "#ffffff";
+        rollingBall.hasChosenPath = false;
+    }
 
 }
