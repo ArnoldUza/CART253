@@ -2,7 +2,7 @@
 
 Arnold and Wassim
 
-[Click me!](ArnoldUza.github.io/CART253/topics/events-challenge)
+[Click me!](https://ArnoldUza.github.io/CART253/topics/events-challenge)
 
 ## Description
 
