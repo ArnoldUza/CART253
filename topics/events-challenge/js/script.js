@@ -1,6 +1,6 @@
 /**
  * The Only Move Is Not To Play
- * Arnold I Uzabakiriho
+ * Pippin Barr
  *
  * A game where your score increases so long as you do nothing.
  */
@@ -13,11 +13,27 @@ let score = 0;
 // Is the game over?
 let gameOver = false;
 
+let connection = true;
+
+
 /**
  * Create the canvas
  */
 function setup() {
   createCanvas(400, 400);
+
+  window.addEventListener("offline", lose)
+
+  document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    lose() = true;
+  }
+});
+
+}
+
+function lose(){
+    gameOver = true;
 }
 
 /**
@@ -61,17 +77,13 @@ function displayScore() {
   pop();
 }
 
-/**
- * The Losing Fucntion
- */
-function lose() {
-  gameOver = true;
-}
+function keyPressed(event){
+        lose();
+    }
+function mouseMoved(event){
+        lose();
+    }
 
-/**
- * Triggers when any key is pressed
- */
-function keyPressed() {
-  // Calling the lose function 
-  lose();
+function mouseWheel(event) {
+    lose();
 }
