@@ -25,4 +25,22 @@ function setup() {
 */
 function draw() {
 
+     background(30, 20, 40);
+
+    // Roll a dynamic random integer parameter sequence every execution layer
+    cycleChanceRoll = random(0, 100);
+
+    // CONDITIONAL TRIGGER: Check if rare 0.5% event margin criteria is satisfied
+    if (cycleChanceRoll < 0.5) {
+        // Spike visual properties instantaneously
+        screenFlashAlpha = 255;
+        recordedEventX = random(50, 590);
+        recordedEventY = random(50, 590);
+    }
+
+    // Soft linear degradation loop to fade structural accents naturally
+    if (screenFlashAlpha > 0) {
+        screenFlashAlpha -= 8;
+    }
+
 }
