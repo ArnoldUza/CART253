@@ -55,4 +55,18 @@ function draw() {
         shyTarget.currentBoxColor = "#00ffcc";
     }
 
+     // Wrap structural coordinate spaces if pushed outside bounds
+    if (shyTarget.x < 0) shyTarget.x = width;
+    if (shyTarget.x > width) shyTarget.x = 0;
+    if (shyTarget.y < 0) shyTarget.y = height;
+    if (shyTarget.y > height) shyTarget.y = 0;
+
+    // Render interactive structural square matrix
+    push();
+    fill(shyTarget.currentBoxColor);
+    noStroke();
+    rectMode(CENTER);
+    rect(shyTarget.x, shyTarget.y, shyTarget.size, shyTarget.size);
+    pop();
+
 }
