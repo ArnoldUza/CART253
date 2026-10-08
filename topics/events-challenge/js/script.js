@@ -88,6 +88,6 @@ function mouseWheel(event) {
     lose();
 }
 
-function mouseClicked(event) {
+function mousePressed(event) {
     lose();
 }
