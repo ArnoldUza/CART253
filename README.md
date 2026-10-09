@@ -54,3 +54,20 @@ A celestial deep-space simulation utilizing coordinate tracking to guide automat
 ![screenshot](./topics/Variables/variables-prototype-3/shootingStars.png)
 [Live version](https://arnolduza.github.io/CART253/topics/Variables/variables-prototype-3/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Variables/variables-prototype-3)
 
+## Prototyping: Conditionals
+
+### Conditionals Prototype 1: The Crossroads
+A ball moves across the canvas and splits onto a random upward or downward path when it hits the exact center.
+![screenshot](./topics/Conditionals/conditionals-prototype-1/Crossroads.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Conditionals/conditionals-prototype-1/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Conditionals/conditionals-prototype-1)
+
+### Conditionals Prototype 2: The Shy Shape
+A teal square tracks your cursor and instantly turns red and runs away if your mouse pointer gets too close.
+![screenshot](./topics/Conditionals/conditionals-prototype-2/shyShape.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Conditionals/conditionals-prototype-2/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Conditionals/conditionals-prototype-2)
+
+### Conditionals Prototype 3: The Lottery Field
+A background system rolls a random decimal number every frame, triggering a bright yellow full-screen flash on a rare 0.5% hit.
+![screenshot](./topics/Conditionals/conditionals-prototype-3/lotteryWaitFlash.png)
+![screenshot](./topics/Conditionals/conditionals-prototype-3/lotteryFlash.png)
+[Live version](https://arnolduza.github.io/CART253/topics/Conditionals/conditionals-prototype-3/) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Conditionals/conditionals-prototype-3)
