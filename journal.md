@@ -29,3 +29,18 @@ Overall, I wanted these three projects to show a clear progression from pure mat
 
 
 ![screenshot](./topics/Variables/variables-prototype-1/jitteryBall.png)
+
+
+## Conditionals Prototype
+
+Working on these three prototypes showed me how conditionals can add decision-making, personality, and random surprise to a script instead of just running down a predictable path.
+
+In Prototype 1 (The Crossroads), I liked seeing how an if-statement can intercept an object and force it to make a choice. Splitting a ball's horizontal vector into an automated 50/50 vertical path at the exact center lines showed me how branching paths completely change layout dynamics.
+
+Prototype 2 (The Shy Shape) made code feel more human. Using dist() to check if the user's cursor got too close allowed me to give an object a basic survival instinct. Flipping its color property to an alert state and triggering evasive vector movements when a proximity threshold is crossed made a basic shape feel alive.
+
+For Prototype 3 (The Lottery Field), I explored pure chance. Setting up a conditional structure that checks for a narrow, fractional decimal roll (< 0.5%) created a great feeling of rarity. The canvas remains completely dark for long frames until an unpredictable winning hit triggers an instant full-screen yellow flash.
+
+
+
+![screenshot](./topics/Conditionals/conditionals-prototype-1/Crossroads.png)
