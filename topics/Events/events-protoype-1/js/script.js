@@ -78,4 +78,19 @@ function draw() {
     let currentX = luffy.x;
     let currentY = luffy.y;
 
+        // Draw horizontal arm path
+    while (currentX !== fistX) {
+        currentX += (arm.extendX > 0) ? tileSize : -tileSize;
+        if (currentX !== fistX) {
+        image(armStretchGif, currentX, luffy.y, tileSize, tileSize);
+        }
+    }
+    // Draw vertical arm path from the end of the horizontal stretch
+    while (currentY !== fistY) {
+        currentY += (arm.extendY > 0) ? tileSize : -tileSize;
+        if (currentY !== fistY) {
+        image(armStretchGif, fistX, currentY, tileSize, tileSize);
+        }
+    }
+
 }
