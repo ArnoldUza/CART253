@@ -20,5 +20,11 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(skyColor);
 
+    // Fill the screen with instructions
+    fill(255);
+    textSize(24);
+    textAlign(CENTER, CENTER);
+    text("Shake your mouse rapidly to enter Gear Second!", width / 2, height / 2);
 }
