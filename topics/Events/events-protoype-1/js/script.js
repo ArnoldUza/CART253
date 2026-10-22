@@ -58,5 +58,15 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#4946ff"); //blue sky
+
+    // 1. Calculate where the fist is based on arm stretch
+    let fistX = luffy.x + (arm.extendX * tileSize);
+    let fistY = luffy.y + (arm.extendY * tileSize);
+
+    // 2. Check if Luffy's fist reached the Thousand Sunny
+    if (fistX === thousandSunny.x && fistY === thousandSunny.y && !thousandSunny.collected) {
+    thousandSunny.collected = true;
+    }
 
 }
