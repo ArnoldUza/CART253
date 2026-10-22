@@ -93,4 +93,12 @@ function draw() {
         }
     }
 
+        // 5. Draw Luffy's head (his body anchor)
+    image(luffyImg, luffy.x, luffy.y, tileSize, tileSize);
+    
+    // 6. Draw Luffy's fist at the very tip of the stretch
+    if (arm.extendX !== 0 || arm.extendY !== 0) {
+        image(fistImg, fistX, fistY, tileSize, tileSize);
+    }
+
 }
