@@ -38,6 +38,13 @@ const onePiece = {
   collected: false
 };
 
+async function preload() {
+  luffyImg = loadImage("assets/images/luffy_head.png");
+  armSegmentImg = loadImage("assets/images/arm_stretch.png");
+  fistImg = loadImage("assets/images/luffy_fist.png");
+  onePieceImg = loadImage("assets/images/one_piece.png");
+}
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
