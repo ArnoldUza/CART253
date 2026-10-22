@@ -14,9 +14,9 @@ const columns = 10;
 
 //image variables
 let luffyImg;
-let armSegmentImg;
+let armStretchGif; //arm stretch gif
 let fistImg;
-let onePieceImg;
+let thousandSunnyImg; // Renamed from onePieceImg
 
 // Luffy anchors on one tile
 const luffy = {
@@ -31,8 +31,8 @@ const arm = {
   maxStretch: 5 // Limits how far his arm can reach
 };
 
-// The treasure target
-const onePiece = {
+// The Thousand Sunny target ship
+const thousandSunny = {
   x: tileSize * 7,
   y: tileSize * 5,
   collected: false
@@ -40,9 +40,9 @@ const onePiece = {
 
 async function preload() {
   luffyImg = loadImage("assets/images/luffy_head.png");
-  armSegmentImg = loadImage("assets/images/arm_stretch.png");
+  armStretchGif = loadImage("assets/images/luffy_stretch.gif");
   fistImg = loadImage("assets/images/luffy_fist.png");
-  onePieceImg = loadImage("assets/images/one_piece.png");
+  thousandSunnyImg = loadImage("assets/images/thousand_sunny.png");
 }
 
 /**
