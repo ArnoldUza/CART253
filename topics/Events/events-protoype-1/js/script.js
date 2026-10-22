@@ -38,7 +38,7 @@ const thousandSunny = {
   collected: false
 };
 
-async function preload() {
+ function preload() {
   luffyImg = loadImage("assets/images/luffy_head.png");
   armStretchGif = loadImage("assets/images/luffy_stretch.gif");
   fistImg = loadImage("assets/images/luffy_fist.png");
@@ -48,14 +48,14 @@ async function preload() {
 /**
  * Creates the game canvas based on our grid size
 */
-async function setup() {
+ function setup() {
   createCanvas(tileSize * columns, tileSize * rows);
-  await preload();
+  
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Updates the screen, checks for ship target, and draws everything
 */
 function draw() {
     background("#4946ff"); //blue sky
@@ -101,4 +101,30 @@ function draw() {
         image(fistImg, fistX, fistY, tileSize, tileSize);
     }
 
+}
+
+/**
+ * Stretches or retracts Luffy's arm using keyboard arrow keys and spacebar
+*/
+
+function keyPressed() {
+  // Arrow keys extend or retract the arm tile by tile
+  if (event.keyCode === RIGHT_ARROW && arm.extendX < arm.maxStretch) {
+    arm.extendX++;
+  }
+  else if (event.keyCode === LEFT_ARROW && arm.extendX > -arm.maxStretch) {
+    arm.extendX--;
+  }
+  else if (event.keyCode === DOWN_ARROW && arm.extendY < arm.maxStretch) {
+    arm.extendY++;
+  }
+  else if (event.keyCode === UP_ARROW && arm.extendY > -arm.maxStretch) {
+    arm.extendY--;
+  }
+  
+  // SPACEBAR resets/retracts the arm instantly back to Luffy
+  if (event.keyCode === 32) { 
+    arm.extendX = 0;
+    arm.extendY = 0;
+  }
 }
