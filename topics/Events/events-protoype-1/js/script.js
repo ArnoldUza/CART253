@@ -46,10 +46,11 @@ async function preload() {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the game canvas based on our grid size
 */
-function setup() {
-
+async function setup() {
+  createCanvas(tileSize * columns, tileSize * rows);
+  await preload();
 }
 
 
