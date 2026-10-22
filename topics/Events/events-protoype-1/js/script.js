@@ -69,4 +69,13 @@ function draw() {
     thousandSunny.collected = true;
     }
 
+        // 3. Draw the Thousand Sunny ship if it hasn't been reached
+    if (!thousandSunny.collected) {
+        image(thousandSunnyImg, thousandSunny.x, thousandSunny.y, tileSize, tileSize);
+    }
+    
+    // 4. Draw the stretched arm animation segments tile-by-tile
+    let currentX = luffy.x;
+    let currentY = luffy.y;
+
 }
