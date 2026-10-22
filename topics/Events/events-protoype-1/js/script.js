@@ -17,6 +17,7 @@ let luffyImg;
 let armStretchGif; //arm stretch gif
 let fistImg;
 let thousandSunnyImg; // Renamed from onePieceImg
+let gumGumSFX
 
 // Luffy anchors on one tile
 const luffy = {
@@ -43,6 +44,9 @@ const thousandSunny = {
   armStretchGif = loadImage("assets/images/luffy_stretch.gif");
   fistImg = loadImage("assets/images/luffy_fist.png");
   thousandSunnyImg = loadImage("assets/images/thousand_sunny.png");
+
+  gumGumSFX = loadSound("assets/sounds/gum_gum.wav"); 
+
 }
 
 /**
@@ -59,7 +63,7 @@ const thousandSunny = {
 */
 function draw() {
     background("#4946ff"); //blue sky
-
+   
     // 1. Calculate where the fist is based on arm stretch
     let fistX = luffy.x + (arm.extendX * tileSize);
     let fistY = luffy.y + (arm.extendY * tileSize);
@@ -93,6 +97,8 @@ function draw() {
         }
     }
 
+     // If an arrow key successfully stretched the arm, play the sound!
+
         // 5. Draw Luffy's head (his body anchor)
     image(luffyImg, luffy.x, luffy.y, tileSize, tileSize);
     
@@ -108,19 +114,30 @@ function draw() {
 */
 
 function keyPressed() {
+     let didMove = false;
   // Arrow keys extend or retract the arm tile by tile
   if (event.keyCode === RIGHT_ARROW && arm.extendX < arm.maxStretch) {
     arm.extendX++;
+     didMove = true;
   }
   else if (event.keyCode === LEFT_ARROW && arm.extendX > -arm.maxStretch) {
     arm.extendX--;
+     didMove = true;
   }
   else if (event.keyCode === DOWN_ARROW && arm.extendY < arm.maxStretch) {
     arm.extendY++;
+     didMove = true;
   }
   else if (event.keyCode === UP_ARROW && arm.extendY > -arm.maxStretch) {
     arm.extendY--;
+     didMove = true;
   }
+
+       // If an arrow key successfully stretched the arm, play the sound!
+  if (didMove) {
+    gumGumSFX.play(); // <-- Triggers your sound clip!
+  }
+
   
   // SPACEBAR resets/retracts the arm instantly back to Luffy
   if (event.keyCode === 32) { 
