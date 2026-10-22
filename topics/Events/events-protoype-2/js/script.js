@@ -1,18 +1,18 @@
 /**
- * Title of Project
- * Author Name
+ * Prototype 2: Gear Second Mouse Blast
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Moving the mouse rapidly triggers Gear Second using acceleration checks.
  */
 
 "use strict";
 
+let skyColor = "#4946ff"; // Normal blue sky
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+    createCanvas(640, 640);
 }
 
 
