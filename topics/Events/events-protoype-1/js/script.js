@@ -1,12 +1,16 @@
 /**
- * Title of Project
- * Author Name
+ * Prototype 1: Gum-Gum Tile Grab
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Luffy stretches his arm across the tiles using keyboard events 
+ * to find the One Piece.
  */
 
 "use strict";
+
+const tileSize = 64; // Bumped up so images look crisp
+const rows = 10;
+const columns = 10;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
