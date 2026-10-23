@@ -29,7 +29,7 @@ const luffy = {
 const arm = {
   extendX: 0,
   extendY: 0,
-  maxStretch: 5 // Limits how far his arm can reach
+  maxStretch: 6 // Limits how far his arm can reach
 };
 
 // The Thousand Sunny target ship
@@ -69,9 +69,11 @@ function draw() {
     let fistY = luffy.y + (arm.extendY * tileSize);
 
     // 2. Check if Luffy's fist reached the Thousand Sunny
-    if (fistX === thousandSunny.x && fistY === thousandSunny.y && !thousandSunny.collected) {
-    thousandSunny.collected = true;
+     let d = dist(fistX, fistY, thousandSunny.x, thousandSunny.y);
+    if (d < tileSize && !thousandSunny.collected) {
+      thousandSunny.collected = true;
     }
+
 
         // 3. Draw the Thousand Sunny ship if it hasn't been reached
     if (!thousandSunny.collected) {
@@ -116,31 +118,31 @@ function draw() {
 function keyPressed() {
      let didMove = false;
   // Arrow keys extend or retract the arm tile by tile
-  if (event.keyCode === RIGHT_ARROW && arm.extendX < arm.maxStretch) {
+  if (keyCode === RIGHT_ARROW && arm.extendX < arm.maxStretch) {
     arm.extendX++;
-     didMove = true;
+    didMove = true;
   }
-  else if (event.keyCode === LEFT_ARROW && arm.extendX > -arm.maxStretch) {
+  else if (keyCode === LEFT_ARROW && arm.extendX > -arm.maxStretch) {
     arm.extendX--;
-     didMove = true;
+    didMove = true;
   }
-  else if (event.keyCode === DOWN_ARROW && arm.extendY < arm.maxStretch) {
+  else if (keyCode === DOWN_ARROW && arm.extendY < arm.maxStretch) {
     arm.extendY++;
-     didMove = true;
+    didMove = true;
   }
-  else if (event.keyCode === UP_ARROW && arm.extendY > -arm.maxStretch) {
+  else if (keyCode === UP_ARROW && arm.extendY > -arm.maxStretch) {
     arm.extendY--;
-     didMove = true;
+    didMove = true;
   }
 
        // If an arrow key successfully stretched the arm, play the sound!
-  if (didMove) {
-    gumGumSFX.play(); // <-- Triggers your sound clip!
+  if (didMove && !gumGumSFX.isPlaying()) {
+    gumGumSFX.play(); 
   }
 
   
   // SPACEBAR resets/retracts the arm instantly back to Luffy
-  if (event.keyCode === 32) { 
+  if (keyCode === 32) { 
     arm.extendX = 0;
     arm.extendY = 0;
   }
