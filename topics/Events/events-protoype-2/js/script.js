@@ -39,9 +39,31 @@ function setup() {
 function draw() {
     background(skyColor);
 
+    // Draw the current stance image right in the center of the screen
+    imageMode(CENTER);
+    image(currentLuffyImg, width / 2, height / 2, 200, 200);
+
     // Fill the screen with instructions
     fill(255);
     textSize(24);
-    textAlign(CENTER, CENTER);
-    text("Shake your mouse rapidly to enter Gear Second!", width / 2, height / 2);
+    textAlign(CENTER, TOP);
+    text("Shake your mouse rapidly to enter Gear Second!", width / 2, 30);
+}
+
+/**
+ * Event Listener: Mouse Moved
+ * Tracks speed to swap his graphic asset and canvas backdrop
+ */
+function mouseMoved() {
+  // Calculate speed by measuring distance from the last mouse frame position
+  let mouseSpeed = dist(mouseX, mouseY, pmouseX, pmouseY);
+  
+  // If moving rapidly, trigger the transformation
+  if (mouseSpeed > 80) {
+    skyColor = "#ff4646";            // Sky turns red
+    currentLuffyImg = luffyGear2Img; // Swaps to Gear 2 pose image
+  } else {
+    skyColor = "#4946ff";            // Sky returns to blue
+    currentLuffyImg = luffyNormalImg; // Swaps back to normal image
+  }
 }
