@@ -52,6 +52,15 @@ function draw() {
     }
     image(hakiShockwaveImg, width / 2, height / 2, shockwaveSize, shockwaveSize);
   }
+
+  // 2. Drawing Luffy directly on top of the shockwave center
+  image(luffyHakiImg, width / 2, height / 2, 180, 180);
+
+   // 3. Top-center instructions text
+  fill(255);
+  textSize(24);
+  textAlign(CENTER, TOP);
+  text("HOLD mouse click to release Conqueror's Haki!", width / 2, 30);
 }
 
 
