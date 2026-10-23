@@ -14,7 +14,8 @@ let currentLuffyImg;       // Holds whichever image should be visible
 let luffyNormalImg;
 let luffyGear2Img;
 
-
+let canvasWidth = 640;  
+let canvasHeight = 640;  
 /**
  * Loads the stance images before the canvas draws
  */
@@ -28,7 +29,7 @@ function preload() {
  * Sets up the canvas window and sets the default starter stance
 */
 function setup() {
-    createCanvas(640, 640);
+    createCanvas(canvasWidth, canvasHeight);
     currentLuffyImg = luffyNormalImg; // Start in normal stance
 }
 

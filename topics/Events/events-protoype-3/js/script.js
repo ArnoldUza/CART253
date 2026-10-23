@@ -14,6 +14,9 @@ let luffyHakiImg;
 let hakiShockwaveImg;
 let hakiSFX;
 
+let canvasWidth = 640;  
+let canvasHeight = 640;  
+
 "use strict";
 
 /**
@@ -29,7 +32,7 @@ function preload() {
  * Sets up the canvas window
 */
 function setup() {
-    createCanvas(640, 640);
+    createCanvas(canvasWidth, canvasHeight);
 }
 
 
@@ -41,6 +44,14 @@ function draw() {
 
     // Set images to draw right from their center points
     imageMode(CENTER);
+
+    // 1. If holding down click, grow and draw the Haki blast bubble over time
+  if (isCharging) {
+    if (shockwaveSize < canvasWidth) {
+      shockwaveSize += 8; // Speed at which the wave expands
+    }
+    image(hakiShockwaveImg, width / 2, height / 2, shockwaveSize, shockwaveSize);
+  }
 }
 
 
