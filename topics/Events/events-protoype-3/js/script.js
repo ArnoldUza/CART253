@@ -21,7 +21,7 @@ let hakiSFX;
  */
 function preload() {
   luffyHakiImg = loadImage("assets/images/luffy_haki_pose.png");
-  hakiShockwaveImg = loadImage("assets/images/haki_shockwave.png");
+  hakiShockwaveImg = loadImage("assets/images/haki_shockwave.gif");
   hakiSFX = loadSound("assets/sounds/haki_blast.wav"); // Loads the sound file
 }
 
@@ -37,5 +37,19 @@ function setup() {
  * Updates the screen, scales up the shockwave, and draws the art
 */
 function draw() {
+    background("#1a1a1a"); // Dark training ground background
 
+    // Set images to draw right from their center points
+    imageMode(CENTER);
+}
+
+
+/**
+ * Event Listener: Mouse Pressed
+ * Triggers when the user first clicks down
+ */
+function mousePressed() {
+  isCharging = true;
+  shockwaveSize = 0; // Reset blast size back to zero
+  hakiSFX.play();    // Triggers the sound clip right when you click!
 }
