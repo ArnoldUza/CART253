@@ -23,9 +23,9 @@ let canvasHeight = 640;
  * Loads the Haki graphics and audio before the canvas draws
  */
 function preload() {
-  luffyHakiImg = loadImage("assets/images/luffy_haki_pose.png");
-  hakiShockwaveImg = loadImage("assets/images/haki_shockwave.gif");
-  hakiSFX = loadSound("assets/sounds/haki_blast.wav"); // Loads the sound file
+  luffyHakiImg = loadImage("./assets/images/luffy_haki_pose.png");
+  hakiShockwaveImg = loadImage("./assets/images/haki_shockwave.gif");
+  hakiSFX = loadSound("./assets/sounds/haki_blast.wav"); // Loads the sound file
 }
 
 /**

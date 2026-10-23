@@ -40,10 +40,10 @@ const thousandSunny = {
 };
 
  function preload() {
-  luffyImg = loadImage("assets/images/luffy_head.png");
-  armStretchGif = loadImage("assets/images/luffy_stretch.gif");
-  fistImg = loadImage("assets/images/luffy_fist.png");
-  thousandSunnyImg = loadImage("assets/images/thousand_sunny.png");
+  luffyImg = loadImage("./assets/images/luffy_head.png");
+  armStretchGif = loadImage("./assets/images/luffy_stretch.gif");
+  fistImg = loadImage("./assets/images/luffy_fist.png");
+  thousandSunnyImg = loadImage("./assets/images/thousand_sunny.png");
 
   gumGumSFX = loadSound("assets/sounds/gum_gum.wav"); 
 

@@ -20,8 +20,8 @@ let canvasHeight = 640;
  * Loads the stance images before the canvas draws
  */
 function preload() {
-  luffyNormalImg = loadImage("assets/images/luffy_normal.png");
-  luffyGear2Img = loadImage("assets/images/luffy_gear2.png");
+  luffyNormalImg = loadImage("./assets/images/luffy_normal.png");
+  luffyGear2Img = loadImage("./assets/images/luffy_gear2.png");
 }
 
 
