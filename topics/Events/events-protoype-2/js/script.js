@@ -8,16 +8,33 @@
 "use strict";
 
 let skyColor = "#4946ff"; // Normal blue sky
+let currentLuffyImg;       // Holds whichever image should be visible
+
+// Image placeholder variables
+let luffyNormalImg;
+let luffyGear2Img;
+
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
-    createCanvas(640, 640);
+ * Loads the stance images before the canvas draws
+ */
+function preload() {
+  luffyNormalImg = loadImage("assets/images/luffy_normal.png");
+  luffyGear2Img = loadImage("assets/images/luffy_gear2.png");
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Sets up the canvas window and sets the default starter stance
+*/
+function setup() {
+    createCanvas(640, 640);
+    currentLuffyImg = luffyNormalImg; // Start in normal stance
+}
+
+
+/**
+ * Giving the 
 */
 function draw() {
     background(skyColor);
