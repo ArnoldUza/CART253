@@ -79,14 +79,14 @@ A background system rolls a random decimal number every frame, triggering a brig
 ### Events Prototype 1: Stretching Powers
 Luffy stretches his arm across the tiles using keyboard events to find the One Piece.
 ![screenshot](./topics/Events/events-prototype-1/luffyStretch.png)
-[Live version](https://arnolduza.github.io/CART253/topics/Events/events-prototype-1) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-1)
+[Live version](https://arnolduza.github.io/CART253/topics/Events/events-protoype-1) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-1)
 
 ### Conditionals Prototype 2: Luffy's 2nd Gear!
 Moving the mouse rapidly triggers Gear Second using acceleration checks.
 ![screenshot](./topics/Events/events-prototype-2/prototype2.png)
-[Live version](https://arnolduza.github.io/CART253/topics/Events/events-prototype-2) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-2)
+[Live version](https://arnolduza.github.io/CART253/topics/Events/events-protoype-2) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-2)
 
 ### Conditionals Prototype 2: Battle of Conqueror's Haki
 Holding down the mouse button expands a Haki shockwave over time.
 ![screenshot](./topics/Events/events-prototype-3/prototype3.png)
-[Live version](https://arnolduza.github.io/CART253/topics/Events/events-prototype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-3)
+[Live version](https://arnolduza.github.io/CART253/topics/Events/events-protoype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-3)

@@ -53,4 +53,4 @@ Prototype 1 was where I spent the most energy, and it came with a few major road
 
 Prototypes 2 and 3 let me experiment with mouse velocity and hold durations. Prototype 2 tracks mouse movement speed; shaking the cursor rapidly swaps Luffy into his Gear Second pose while the sky turns red. Prototype 3 (Conqueror's Haki) brought its own unique loading bug. The screen got stuck on "Loading..." because I accidentally deleted the image of Luffy standing. I then added a boundary check (if (shockwaveSize < canvasWidth)) so the expanding Haki GIF stops growing perfectly at the edge of the 640px canvas. Managing these visual states and sound fixes made the final loops feel incredibly interactive and snappy.
 
-![screenshot](./topics/Events/events-prototype-1/luffyStretch.png)
+![screenshot](./topics/Events/events-protoype-1/luffyStretch.png)
