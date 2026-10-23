@@ -4,7 +4,7 @@
  * 
  * Holding down the mouse button expands a Haki shockwave over time.
  */
-
+"use strict";
 //State variables
 let shockwaveSize = 0;
 let isCharging = false;
@@ -17,7 +17,7 @@ let hakiSFX;
 let canvasWidth = 640;  
 let canvasHeight = 640;  
 
-"use strict";
+
 
 /**
  * Loads the Haki graphics and audio before the canvas draws
