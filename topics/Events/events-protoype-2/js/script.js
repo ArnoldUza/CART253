@@ -34,7 +34,7 @@ function setup() {
 
 
 /**
- * Giving the 
+ * Draws the background and centers the active Luffy pose image
 */
 function draw() {
     background(skyColor);

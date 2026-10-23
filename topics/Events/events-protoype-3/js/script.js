@@ -1,23 +1,31 @@
 /**
- * Title of Project
- * Author Name
+ * Prototype 3: Conqueror's Haki Charging
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Holding down the mouse button expands a Haki shockwave over time.
  */
+
+//State variables
+let shockwaveSize = 0;
+let isCharging = false;
+
+// Image and sound placeholders
+let luffyHakiImg;
+let hakiShockwaveImg;
+let hakiSFX;
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Sets up the canvas window
 */
 function setup() {
-
+    createCanvas(640, 640);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Updates the screen, scales up the shockwave, and draws the art
 */
 function draw() {
 
