@@ -44,3 +44,13 @@ For Prototype 3 (The Lottery Field), I explored pure chance. Setting up a condit
 
 
 ![screenshot](./topics/Conditionals/conditionals-prototype-1/Crossroads.png)
+
+## Events Prototype
+
+Working on this assignment showed me how connecting a program to human inputs changes the whole feel of a project. I used a One Piece theme across all three prototypes to keep things unified, but each one forced me to tackle a completely different type of event handling.
+
+Prototype 1 was where I spent the most energy, and it came with a few major roadblocks. I built a grid setup where Luffy stretches his arm tile-by-tile using arrow keys to reach the Thousand Sunny. My first big headache was that the ship wouldn't disappear when touched. I had fallen into an async/await trap inside my loading logic, my maxStretch limit was too short, and an outdated event.keyCode bug froze the controls. I fixed it by cleaning up the functions, expanding his reach, and using a dist() calculation to check for overlapping boxes. I also used an !isPlaying() check to stop the "Gum-Gum" sound effect from glitching when keys were spammed.
+
+Prototypes 2 and 3 let me experiment with mouse velocity and hold durations. Prototype 2 tracks mouse movement speed; shaking the cursor rapidly swaps Luffy into his Gear Second pose while the sky turns red. Prototype 3 (Conqueror's Haki) brought its own unique loading bug. The screen got stuck on "Loading..." because I accidentally deleted the image of Luffy standing. I then added a boundary check (if (shockwaveSize < canvasWidth)) so the expanding Haki GIF stops growing perfectly at the edge of the 640px canvas. Managing these visual states and sound fixes made the final loops feel incredibly interactive and snappy.
+
+![screenshot](./topics/Events/events-prototype-1/prototype1.png)
