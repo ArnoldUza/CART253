@@ -53,3 +53,11 @@ function mousePressed() {
   shockwaveSize = 0; // Reset blast size back to zero
   hakiSFX.play();    // Triggers the sound clip right when you click!
 }
+
+/**
+ * Event Listener: Mouse Released
+ * Triggers when the user lets go of the click
+ */
+function mouseReleased() {
+  isCharging = false; // Stop drawing and growing the wave
+}
