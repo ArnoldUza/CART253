@@ -10,7 +10,7 @@
 //speech
 const  speech = ["Veni.", "Vidi.", "Vici.", "Sensi malum."];
 //current sentence to display from speech
-let speechIndex = 2;
+let speechIndex = 0;
 
 /**
  * Create canvas
@@ -36,4 +36,12 @@ function draw() {
     text(currentLine, width / 2, height / 2);
     pop();
 
+
+}
+
+function mousePressed() {
+    speechIndex++;
+    if(speechIndex >= speech.length){
+        speechIndex = 0;
+    }
 }
