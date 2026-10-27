@@ -10,13 +10,13 @@
 //speech
 const  speech = ["Veni.", "Vidi.", "Vici.", "Sensi malum."];
 //current sentence to display from speech
-let speechIndex = 0;
+let speechIndex = 2;
 
 /**
  * Create canvas
 */
 function setup() {
-    craeteCanvas(600, 100);
+    createCanvas(600, 100);
 }
 
 
