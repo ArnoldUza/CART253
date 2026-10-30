@@ -21,6 +21,10 @@ function setup() {
 */
 function draw() {
     background(30);
+
+    drawButton(100, 150, 120, 60, "Click Me", color(230, 57, 70));
+    drawButton(250, 150, 120, 60, "Press Here", color(58, 125, 68));
+    drawButton(400, 150, 120, 60, "Action", color(67, 97, 238));
 }
 
 
