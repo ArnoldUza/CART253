@@ -37,6 +37,16 @@ function drawTarget(x, y, maxRadius, coreColor) {
     fill(coreColor);
     ellipse(x, y, maxRadius);
 
+     // Middle circle (same color as background)
+    fill(240);
+    ellipse(x, y, maxRadius * 0.66);
+    
+    // Small center circle
+    fill(coreColor);
+    ellipse(x, y, maxRadius * 0.33);
+    
+    pop();
+
 }
 
 
