@@ -54,3 +54,19 @@ Prototype 1 was where I spent the most energy, and it came with a few major road
 Prototypes 2 and 3 let me experiment with mouse velocity and hold durations. Prototype 2 tracks mouse movement speed; shaking the cursor rapidly swaps Luffy into his Gear Second pose while the sky turns red. Prototype 3 (Conqueror's Haki) brought its own unique loading bug. The screen got stuck on "Loading..." because I accidentally deleted the image of Luffy standing. I then added a boundary check (if (shockwaveSize < canvasWidth)) so the expanding Haki GIF stops growing perfectly at the edge of the 640px canvas. Managing these visual states and sound fixes made the final loops feel incredibly interactive and snappy.
 
 ![screenshot](./topics/Events/events-protoype-1/luffyStretch.png)
+
+
+## Functions Prototype
+
+Working through these three projects showed me how much cleaner a program becomes when you replace messy, repeating code blocks with single custom functions. 
+
+In Prototype 1 (Many Buttons), I used parameters to draw three completely different interactive buttons using just one main function block. It was surprising to see how changing simple arguments in the draw loop could instantly adjust the layout, colors, and mouse-hover states of individual elements without rewriting the shape logic over and over.
+
+Prototype 2 (Moving Stars) was the hardest to wrap my head around at first because of variable scope and return values. Building a custom function that packages position and speed data into a single object, then uses the `return` keyword to send that package back to setup, took some practice. Once it clicked, it felt like a superpower for generating automated elements quickly.
+
+For Prototype 3 (Cleaning Up Shapes), I practiced pure refactoring. I took a messy script that manually drew circles the long way and condensed it down into a single, modular target-drawing tool. It showed a clear progression in how I organize my thoughts and code.
+
+Ultimately, I hope anyone looking at these three files notices how much more organized my work is becoming. I want to use these techniques to improve my creativity and build more complex, interactive art in this course without my code turning into a giant, unreadable mess.
+
+![screenshot](./topics/Functions/functions-prototype-1/buttons.png)
+
