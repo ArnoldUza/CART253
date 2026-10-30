@@ -48,3 +48,20 @@ function createStar(yPos, customSpeed) {
     };
     return starData; // Send the star data back to setup
 }
+
+/**
+ * This function draws the star and moves it across the screen
+ */
+function moveStar(star) {
+    fill(255, 255, 200);
+    noStroke();
+    ellipse(star.x, star.y, star.size);
+    
+    // Move the star to the right
+    star.x += star.speed;
+    
+    // If the star goes off screen, reset it to the left side
+    if (star.x > width) {
+        star.x = 0;
+    }
+}
