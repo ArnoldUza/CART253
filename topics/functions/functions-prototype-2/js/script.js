@@ -1,18 +1,28 @@
 /**
- * Prototype 1: Multi-Button Grid
+ * Prototype 2: Starfield Generator
  * Arnold I Uzabakiriho
  * 
- * function with parameters to make three buttons.
- * Parameters let us reuse the same code to make different shapes.
+ * uses a function that returns an object. 
+ * Generating data for stars
  */
 
 "use strict";
+
+//star variables
+let star1;
+let star2;
+let star3;
 
 /**
  * Creating the canvas
 */
 function setup() {
     createCanvas(600, 400);
+
+    // Create three separate stars using our function
+    star1 = createStar(100, 2);
+    star2 = createStar(200, 3.5);
+    star3 = createStar(300, 5);
 }
 
 
@@ -22,27 +32,7 @@ function setup() {
 function draw() {
     background(30);
 
-    drawButton(100, 150, 120, 60, "Click Me", color(230, 57, 70));
-    drawButton(250, 150, 120, 60, "Press Here", color(58, 125, 68));
-    drawButton(400, 150, 120, 60, "Action", color(67, 97, 238));
-}
-
-
-function drawButton(x, y, w, h, label, baseColor) {
-    // Check if mouse is hovering over this specific button instance
-    if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
-        fill(255); // Highlight fill color
-        cursor(HAND);
-    } else {
-        fill(baseColor);
-        cursor(ARROW);
-    }
     
-    rect(x, y, w, h, 10);
-
-    // Label configuration
-    fill(255);
-    textAlign(CENTER, CENTER);
-    textSize(16);
-    text(label, x + w / 2, y + h / 2);
 }
+
+

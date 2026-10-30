@@ -27,6 +27,7 @@ function draw() {
     drawButton(400, 150, 120, 60, "Action", color(67, 97, 238));
 }
 
+//button changes color when mouse hovers
 
 function drawButton(x, y, w, h, label, baseColor) {
     // Check if mouse is hovering over this specific button instance
