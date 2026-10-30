@@ -32,7 +32,10 @@ function setup() {
 function draw() {
     background(30);
 
-    
+     // Move and show each star
+    moveStar(star1);
+    moveStar(star2);
+    moveStar(star3);
 }
 
 
