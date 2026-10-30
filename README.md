@@ -90,3 +90,7 @@ Moving the mouse rapidly triggers Gear Second using acceleration checks.
 Holding down the mouse button expands a Haki shockwave over time.
 ![screenshot](./topics/Events/events-protoype-3/prototype3.png)
 [Live version](https://arnolduza.github.io/CART253/topics/Events/events-protoype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/Events/events-protoype-3)
+
+
+## Prototyping: Functions
+

@@ -68,5 +68,5 @@ For Prototype 3 (Cleaning Up Shapes), I practiced pure refactoring. I took a mes
 
 Ultimately, I hope anyone looking at these three files notices how much more organized my work is becoming. I want to use these techniques to improve my creativity and build more complex, interactive art in this course without my code turning into a giant, unreadable mess.
 
-![screenshot](./topics/Functions/functions-prototype-1/buttons.png)
+![screenshot](./topics/functions/functions-prototype-1/buttons.png)
 
