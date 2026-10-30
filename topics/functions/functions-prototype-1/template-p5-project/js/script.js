@@ -36,5 +36,9 @@ function drawButton(x, y, w, h, label, baseColor) {
     
     rect(x, y, w, h, 10);
 
-    
+    // Label configuration
+    fill(255);
+    textAlign(CENTER, CENTER);
+    textSize(16);
+    text(label, x + w / 2, y + h / 2);
 }
