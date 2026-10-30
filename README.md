@@ -97,14 +97,14 @@ Holding down the mouse button expands a Haki shockwave over time.
 ### Functions Prototype 1: Many Buttons
 This project uses a custom function with parameters to create three separate interactive buttons on a single dark canvas without repeating the shape code.
 ![screenshot](./topics/functions/functions-prototype-1/buttons.png)
-[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-protoype-1) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-1)
+[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-prototype-1) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-1)
 
 ### Functions Prototype 2: Moving Stars
 This project uses a data generation function that utilizes the return keyword to package up independent coordinate and velocity positions for a custom automated star field.
 ![screenshot](./topics/functions/functions-prototype-2/stars.png)
-[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-protoype-2) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-2)
+[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-prototype-2) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-2)
 
 ### Functions Prototype 3: Cleaning Up Shapes
 This project practices code refactoring by condensing messy, repeating nested ellipse commands down into a clean, single target drawing tool.
 ![screenshot](./topics/functions/functions-prototype-3/targets.png)
-[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-protoype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-3)
+[Live version](https://arnolduza.github.io/CART253/topics/functions/functions-prototype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-3)
