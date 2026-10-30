@@ -36,3 +36,15 @@ function draw() {
 }
 
 
+/**
+ * This function makes and returns a new star object with its own data
+ */
+function createStar(yPos, customSpeed) {
+    let starData = {
+        x: random(0, width),
+        y: yPos,
+        size: random(4, 10),
+        speed: customSpeed
+    };
+    return starData; // Send the star data back to setup
+}
