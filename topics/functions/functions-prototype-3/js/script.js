@@ -23,7 +23,10 @@ function setup() {
 function draw() {
     background(240);
 
-    
+    // Instead of writing many circles over and over, we just call our function
+    drawTarget(150, 200, 120, color(255, 0, 0));
+    drawTarget(300, 200, 80, color(0, 0, 255));
+    drawTarget(450, 200, 160, color(50, 200, 50));
 }
 
 /**
