@@ -30,11 +30,25 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing meteors, the explosion, their movement and respawn
 */
 function draw() {
     background(15, 15, 25); //Outerspace
 
-    //Draw a visual
+    //Draw a visual tracker for the cursor
+    stroke(255, 0, 0);
+    strokeWeight(2);
+    noFill();
+    ellipse(mouseX, mouseY, 40);
+
+
+    for (let i = 0; i < meteors.length; i++){
+        let m = meteors[i];
+
+        if (m.delay > 0){
+            m.delay--;
+            continue;
+        }
+    }
 
 }
