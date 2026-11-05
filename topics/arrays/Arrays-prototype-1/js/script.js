@@ -77,7 +77,7 @@ function draw() {
             plane.x += plane.speed;
 
             //slight wavy fluctuation to test boundary limits
-            plane.y +=random(-10, 10);
+            plane.y +=random(-15, 15);
 
             //Check boundary collisions (top or bottom limits)
             if (plane.y <= 50 || plane.y >= height - 50) {
