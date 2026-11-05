@@ -31,7 +31,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing divers, their movement and respawn
 */
 function draw() {
     background(10, 30, 80); //Ocean blue

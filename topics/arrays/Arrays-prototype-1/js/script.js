@@ -51,7 +51,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing airplanes, the explosion, their movement and respawn
 */
 function draw() {
     background(135, 206, 235); //blue background
