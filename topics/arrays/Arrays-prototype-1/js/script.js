@@ -17,6 +17,16 @@ let airplanes = [];
 //The total amount we can hold in the array
 let totalAirplanes = 5;
 
+//explosion sound variable
+let explosionSFX;
+
+
+/**
+ * Loads audio before the canvas draws
+ */
+function preload() {
+  explosionSFX = loadSound("./assets/sounds/explosionFX.mp3");  // Loads the sound file
+}
 
 
 /**
@@ -72,6 +82,7 @@ function draw() {
             //Check boundary collisions (top or bottom limits)
             if (plane.y <= 50 || plane.y >= height - 50) {
                 plane.isExploded = true;
+                explosionSFX.play();
             }
 
             //Checking if it successfully made it past the right border
