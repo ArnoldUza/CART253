@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * Prototype 3: Falling Meteors
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An array of meteors falling down
+ * If they 
  */
 
 "use strict";
