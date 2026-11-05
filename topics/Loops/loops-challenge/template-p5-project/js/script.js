@@ -7,7 +7,6 @@
 
 "use strict";
 
-    const lines = 11;
 
 /**
  * Creates the canvas
