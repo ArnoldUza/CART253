@@ -1,12 +1,21 @@
 /**
- * Title of Project
- * Author Name
+ * Flying Objects Prototype
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An exploration of arrays holding objects. 
+ * Flying objects spawn at random times from the left, moving right.
+ * They must avoid crashing into the top or bottom boundaries of the canvas.
+ * 
  */
 
 "use strict";
+
+//Defining an array of airplanes
+let airplanes = [];
+
+
+//The total amount we can hold in the array
+let totalAirplanes = 5;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
