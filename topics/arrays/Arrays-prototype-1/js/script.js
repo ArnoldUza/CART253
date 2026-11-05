@@ -18,9 +18,22 @@ let airplanes = [];
 let totalAirplanes = 5;
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating the canvas with airplanes
+ * 
 */
 function setup() {
+    createCanvas(800, 600); 
+
+    for (let i = 0; i < totalAirplanes; i++){
+        airplanes.push({
+        x: -50,
+        y: random(100, height - 100),
+        speed: random(2, 5),
+        size: 30,
+        isExploded: false,
+        startDelay: random(0, 300)
+    });
+    }
 
 }
 
