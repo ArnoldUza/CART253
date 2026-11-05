@@ -56,5 +56,18 @@ function draw() {
 
         //slight wavy fluctuation to test boundary limits
         plane.y +=random(-15, 15);
+
+        //Checking if the diver hits the border or safely escapes the top
+        if(diver.x <= 50 || diver.x >= width || diver.y < -diver.size) {
+            diver.x = random(100, width - 100);
+            diver.y = 650;
+            diver.speed = random(1.5, 4),
+            diver.delay = random(30, 100);
+        }
+
+        //Drawing the diver as a yellow cirle
+        fill(255, 215, 0);
+        noStroke();
+        ellipse(diver.x, diver.y, diver.size);
     }
 }
