@@ -80,7 +80,26 @@ function draw() {
             }
         }
 
-        
+        //The Rendering and Drawing
+        if(plane.isExploded){
+            //Drawing the explosion
+            fill(255, 69, 0);
+            noStroke();
+            ellipse(plane.x, plane.y, plane.size * 1.5);
+            
+
+            //auto-respawn after exploding
+            resetPlane(plane);
+        } else {
+            //Draw the airplane
+            fill(255);
+            stroke(0);
+            push();
+            translate(plane.x, plane.y);
+            //Drawing a wedge facing to the right
+            triangle(-plane.size, -plane.size/2, -plane.size, plane.size/2, 0, 0);
+            pop(); 
+        }
     }
 
 }
