@@ -44,11 +44,30 @@ function draw() {
 
     for (let i = 0; i < meteors.length; i++){
         let m = meteors[i];
-
+        
+        //spawn delay
         if (m.delay > 0){
             m.delay--;
             continue;
         }
+
+        //Moving the meteor down
+        m.y -= m.speed;
+
+        //Calculating distance between meteor's position and the mouse cursor
+        let theDistance = dist(m.x, m.y, mouseX, mouseY);
+
+        //Making it respawn if it dies or safely makes it to the bottom
+        if(theDistance < m.size / 2 + 20 || m.y > height + m.size) {
+            //respawn back at the top
+            m.x = random(100, height - 100);
+            m.y = -50;
+            speed = random(2, 6);
+            size = random(25, 40);
+            delay = random(20, 90);
+        }
+
+        //Drawing the meteor
     }
 
 }
