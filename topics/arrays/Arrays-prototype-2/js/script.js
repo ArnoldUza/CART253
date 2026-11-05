@@ -1,18 +1,22 @@
 /**
- * Title of Project
- * Author Name
+ * Prototype 2: Deep Sea Divers
+ * Arnold I Uzabakiriho
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An array of divers moving from bottom to top
+ * They must avoid hitting the left or right screen borders
  */
 
 "use strict";
+
+let divers = [];
+let totalDivers = 5;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+    createCanvas(600, 600);
+    
 }
 
 
