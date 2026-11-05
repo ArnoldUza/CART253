@@ -46,7 +46,42 @@ function setup() {
 function draw() {
     background(135, 206, 235); //blue background
 
-    
+    //Drawing safe zones or danger indicatiors at the top and bottom boundaries
+    fill(200, 50, 50, 50);
+    rect(0, 0, width, 50);
+    rect(0, height - 50, width, 50);
+
+
+    //Loop through all airplanes inside array
+    for(let i = 0; i < airplanes.length; i++){
+        let plane = airplanes[i];
+
+        //Decrement the delay timer 
+        if (plane.startDelay > 0) {
+            plane.startDelay--;
+            continue; //skip moving/drawing this plane until the delay hits 0
+        }
+
+        //The Logic and movement
+        if(!plane.isExploded){
+            plane.x += plane.speed;
+
+            //slight wavy fluctuation to test boundary limits
+            plane.y +=random(-10, 10);
+
+            //Check boundary collisions (top or bottom limits)
+            if (plane.y <= 50 || plane.y >= height - 50) {
+                plane.isExploded = true;
+            }
+
+            //Checking if it successfully made it past the right border
+            if (plane.x > width + plane.size) {
+                resetPlane(plane);
+            }
+        }
+
+        
+    }
 
 }
 
