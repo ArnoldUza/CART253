@@ -9,7 +9,7 @@
 "use strict";
 
 let divers = [];
-let totalDivers = 5;
+let totalDivers = 102;
 
 /**
  * Creating canvas with the array of divers
@@ -52,13 +52,13 @@ function draw() {
             continue; //skip moving/drawing this plane until the delay hits 0
         }
 
-        plane.x += plane.speed;
+        diver.y -= diver.speed;
 
         //slight wavy fluctuation to test boundary limits
-        plane.y +=random(-15, 15);
+        diver.x += random(-15, 15);
 
         //Checking if the diver hits the border or safely escapes the top
-        if(diver.x <= 50 || diver.x >= width || diver.y < -diver.size) {
+        if(diver.x <= 50 || diver.x >= width - 50 || diver.y < -diver.size) {
             diver.x = random(100, width - 100);
             diver.y = 650;
             diver.speed = random(1.5, 4),
@@ -70,4 +70,6 @@ function draw() {
         noStroke();
         ellipse(diver.x, diver.y, diver.size);
     }
+
+    
 }
