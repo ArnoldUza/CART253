@@ -27,7 +27,6 @@ function setup() {
             delay: random(0, 200) //Random spawn timer
         });
     }
-
 }
 
 
@@ -35,5 +34,27 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(10, 30, 80); //Ocean blue
 
+    //Drawing safe zones or danger indicatiors at the top and bottom boundaries
+    fill(200, 0, 0, 40);
+    rect(0, 0, 50, height);
+    rect(width - 50, 0, width, height);
+
+
+    //Looping through the array to draw the divers
+    for(let i = 0; i < divers.length; i++){
+        let diver = divers[i];
+
+        //Decrement the delay timer 
+        if (diver.delay > 0) {
+            diver.delay--;
+            continue; //skip moving/drawing this plane until the delay hits 0
+        }
+
+        plane.x += plane.speed;
+
+        //slight wavy fluctuation to test boundary limits
+        plane.y +=random(-15, 15);
+    }
 }
