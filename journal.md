@@ -79,5 +79,5 @@ The hardest part was managing object property scope under `"use strict";`. Insid
 
 I want to replace the simple shapes with custom image graphics and animated sprite sheets. While adding the p5.js Sound library introduced annoying browser audio permissions issues, getting the final audio to sync up perfectly with the explosions made the prototype feel complete.
 
-![screenshot](./topics/arrays/Arrays-prototype-1/Meteors.png)
+![screenshot](./topics/arrays/Arrays-prototype-1/airplanes.png)
 
