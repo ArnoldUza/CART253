@@ -23,6 +23,7 @@ function setup() {
             y: -50,
             speed: random(2, 6),
             size: random(25, 40),
+            isExploded: false,
             delay: random(0, 180)
         });
     }
@@ -70,4 +71,15 @@ function draw() {
         //Drawing the meteor
     }
 
+}
+
+//Function of respawning
+function resetMeteor(m) {
+    //respawn back at the top
+    m.x = random(100, height - 100);
+    m.y = -50;
+    speed = random(2, 6);
+    size = random(25, 40);
+    m.isExploded = false;
+    delay = random(20, 90);
 }
