@@ -108,3 +108,21 @@ This project uses a data generation function that utilizes the return keyword to
 This project practices code refactoring by condensing messy, repeating nested ellipse commands down into a clean, single target drawing tool.
 ![screenshot](./topics/functions/functions-prototype-3/targets.png)
 [Live version](https://arnolduza.github.io/CART253/topics/functions/functions-prototype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/functions/functions-prototype-3)
+
+
+## Prototyping: Arrays
+
+### Functions Prototype 1: Flying Airplanes
+Five airplanes come in from the left side of the screen. They need to fly across the sky without hitting the top or bottom edges.
+![screenshot](./topics/arrays/Arrays-prototype-1/airplanes.png)
+[Live version](https://arnolduza.github.io/CART253/topics/arrays/Arrays-prototype-1) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/arrays/Arrays-prototype-1)
+
+### Functions Prototype 2: Swimming divers
+A screen shows 102 deep-sea divers swimming up. The divers move with the water current and need to avoid hitting the sides.
+![screenshot](./topics/arrays/Arrays-prototype-2/divers.png)
+[Live version](https://arnolduza.github.io/CART253/topics/arrays/Arrays-prototype-2) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/arrays/Arrays-prototype-2)
+
+### Functions Prototype 3: Falling meteors
+A space game shows 40 fast meteors falling on the screen. Moving your mouse creates a shield that blows up the meteors with a sound effect.
+![screenshot](./topics/arrays/Arrays-prototype-3/Meteors.png)
+[Live version](https://arnolduza.github.io/CART253/topics/arrays/Arrays-prototype-3) | [Code](https://github.com/ArnoldUza/CART253/tree/main/topics/arrays/Arrays-prototype-3)
