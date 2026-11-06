@@ -70,3 +70,14 @@ Ultimately, I hope anyone looking at these three files notices how much more org
 
 ![screenshot](./topics/functions/functions-prototype-1/buttons.png)
 
+## Arrays Prototype
+
+This week, I built interactive prototypes to explore how arrays manage independent data objects dynamically. I was amazed by the efficiency of using an array combined with objects. Instead of creating dozens of manual variables for every single shape like in past tasks, a single `for` loop allowed me to instantly scale my simulation from 5 to 40 falling meteors by changing just one number (`totalMeteors = 40`).
+
+
+The hardest part was managing object property scope under `"use strict";`. Inside my `resetMeteor(m)` function, I initially forgot to add the `m.` prefix to properties like speed and size, which crashed the program with reference errors. Fixing this taught me how critical strict object references are. I also had to fix the falling movement direction and correct my random width variables so objects stayed inside canvas boundaries.
+
+I want to replace the simple shapes with custom image graphics and animated sprite sheets. While adding the p5.js Sound library introduced annoying browser audio permissions issues, getting the final audio to sync up perfectly with the explosions made the prototype feel complete.
+
+![screenshot](./topics/arrays/Arrays-prototype-1/Meteors.png)
+
