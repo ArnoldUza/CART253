@@ -1,24 +1,74 @@
 /**
- * Title of Project
- * Author Name
+ * Terrible New Car
+ * Arnold, Wassim and John
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A program to generate new car model names using dinosaurs.
+ * 
+ * Uses:
+ * Darius Kazemi's corpora repository
+ * https://github.com/dariusk/corpora/tree/master
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
+let carData = undefined;
+let dinosaurData = undefined;
+let langData = undefined;
+let lang = "fr";
 
+// Starts with the instruction
+let carName = "Click to generate a car name.";
+
+/**
+ * Load the car and dinosaur data
+ */
+async function preload() {
+    carData = await loadJSON("./assets/data/cars.json");
+    dinosaurData = await loadJSON("./assets/data/dinosaurs.json");
+    langData = await loadJSON("./assets/data/lang.json");
 }
 
+/**
+ * Create the canvas
+*/
+async function setup() {
+    createCanvas(600, 400);
+    
+    await preload();
+
+    if (lang === "fr") {
+        carName = langData.instructions.fr;
+    }
+    else if (lang === "en") {
+        carName = langData.instructions.en;
+    }
+}
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Display the current main text (either instructions or a car)
 */
 function draw() {
+    background(0);
+    
+    push();
+    fill("pink");
+    textAlign(CENTER, CENTER);
+    textSize(32);
+    text(carName, width / 2, height / 2);
+    pop();
+}
+
+/**
+ * Generate a new car name
+ */
+function mousePressed() {
+    //First part
+    const car = random(carData.cars);
+    //Second part
+    const dinosaur = random(dinosaurData.dinosaurs);
+    //combined name
+    carName = car + " " + dinosaur;
 
 }
+
+
